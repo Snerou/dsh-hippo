@@ -1,6 +1,6 @@
 {
     "name": "dsh-hippo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "海马体：把工作区文件、DSH 记忆和会话记录画成一张可交互的神经元网络，挂在侧栏随时翻。",
     "type": "module",
     "main": "lib/index.js",
@@ -25,6 +25,15 @@
         "hippocampus"
     ],
     "license": "MIT",
+    "author": "Krichy07",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Krichy07/dsh-hippo.git"
+    },
+    "homepage": "https://github.com/Krichy07/dsh-hippo#readme",
+    "bugs": {
+        "url": "https://github.com/Krichy07/dsh-hippo/issues"
+    },
     "dsh": {
         "bundle": {
             "patch": "./cordis.patch.yml"
