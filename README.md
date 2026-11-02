@@ -31,7 +31,7 @@ dsh plugin --profile desktop add dsh-hippo
 - 一个**会话节点**（标题取 DSH 记的会话名，没有就取你说的第一句话）
 - 最多 8 条**条目节点**（你说过的话，去掉了系统注入的说明文字）
 
-会话文件是追加式多帧 zstd，插件按帧切分逐个解压，解析结果按「大小 + 修改时间」缓存到 `~/.dsh/dsh-hippocampus/session-cache.json`，没变的文件不重复解。
+会话文件是追加式多帧 zstd，插件按帧切分逐个解压，解析结果按「大小 + 修改时间」缓存到 `~/.dsh/dsh-hippo/session-cache.json`，没变的文件不重复解。
 
 **所以每次重启 DSH，新会话和相关文件都会自动重新整理进去，不用手动触发。**
 
@@ -39,7 +39,7 @@ dsh plugin --profile desktop add dsh-hippo
 
 ## 配置
 
-`~/.dsh/dsh-hippocampus.json`（可选，不存在就用默认值）：
+`~/.dsh/dsh-hippo.json`（可选，不存在就用默认值）：
 
 ```json
 {
@@ -56,7 +56,7 @@ dsh plugin --profile desktop add dsh-hippo
 
 ## 和「根源追溯」联动
 
-装 [根源追溯](https://github.com/Snerou/dsh-reason-tree) 之后，在追溯面板里点「定位至海马体」，海马体会自动飞到对应的文件或那一条结论上。
+装 [根源追溯](https://github.com/Krichy07/dsh-trace) 之后，在追溯面板里点「定位至海马体」，海马体会自动飞到对应的文件或那一条结论上。
 
 联动走 `localStorage` + `window` 自定义事件，不需要两个插件互相 import。
 
