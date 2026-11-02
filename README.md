@@ -56,7 +56,7 @@ dsh plugin --profile desktop add dsh-hippo
 
 ## 和「根源追溯」联动
 
-装 [dsh-trace](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 之后，在追溯面板里点「定位至海马体」，海马体会自动飞到对应的文件或那一条结论上。
+装 [根源追溯](https://github.com/Snerou/dsh-reason-tree) 之后，在追溯面板里点「定位至海马体」，海马体会自动飞到对应的文件或那一条结论上。
 
 联动走 `localStorage` + `window` 自定义事件，不需要两个插件互相 import。
 
