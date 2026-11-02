@@ -1,39 +1,39 @@
 {
-    "name":  "dsh-hippo",
-    "version":  "1.0.0",
-    "description":  "海马体：把工作区文件、DSH 记忆和会话记录画成一张可交互的神经元网络，挂在侧栏随时翻。",
-    "type":  "module",
-    "main":  "lib/index.js",
-    "exports":  {
-                    ".":  "./lib/index.js",
-                    "./client":  "./lib/client.js",
-                    "./package.json":  "./package.json"
-                },
-    "files":  [
-                  "lib",
-                  "cordis.patch.yml",
-                  "README.md",
-                  "LICENSE"
-              ],
-    "keywords":  [
-                     "dsh",
-                     "plugin",
-                     "memory",
-                     "knowledge-graph",
-                     "visualization",
-                     "session",
-                     "hippocampus"
-                 ],
-    "license":  "MIT",
-    "dsh":  {
-                "bundle":  {
-                               "patch":  "./cordis.patch.yml"
-                           },
-                "client":  {
-                               "platform":  "web",
-                               "inject":  [
-                                              "@deepseek-ai/dsh-client-ui-slots"
-                                          ]
-                           }
-            }
+    "name": "dsh-hippo",
+    "version": "1.0.1",
+    "description": "海马体：把工作区文件、DSH 记忆和会话记录画成一张可交互的神经元网络，挂在侧栏随时翻。",
+    "type": "module",
+    "main": "lib/index.js",
+    "exports": {
+        ".": "./lib/index.js",
+        "./client": "./lib/client.js",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "lib",
+        "cordis.patch.yml",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "dsh",
+        "plugin",
+        "memory",
+        "knowledge-graph",
+        "visualization",
+        "session",
+        "hippocampus"
+    ],
+    "license": "MIT",
+    "dsh": {
+        "bundle": {
+            "patch": "./cordis.patch.yml"
+        },
+        "client": {
+            "platform": "web",
+            "inject": [
+                "@deepseek-ai/dsh-client-ui-slots"
+            ]
+        }
+    }
 }
