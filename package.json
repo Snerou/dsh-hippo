@@ -1,6 +1,6 @@
 {
   "name": "dsh-hippo",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "海马体：把工作区文件、DSH 记忆和会话记录画成一张可交互的神经元网络，挂在侧栏随时翻。",
   "type": "module",
   "main": "lib/index.js",
